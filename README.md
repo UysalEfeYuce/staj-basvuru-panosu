@@ -44,7 +44,7 @@ Ek bir arayüz, grafik veya sürükle-bırak kütüphanesi kullanılmadı. Grafi
 Gereksinim: [Node.js](https://nodejs.org) 20.19+ veya 22.12+.
 
 ```bash
-git clone https://github.com/<kullanici-adi>/staj-basvuru-panosu.git
+git clone https://github.com/UysalEfeYuce/staj-basvuru-panosu.git
 cd staj-basvuru-panosu
 npm install
 npm run dev
