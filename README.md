@@ -94,20 +94,14 @@ Veriler `staj-panosu` anahtarıyla `{ surum: 1, basvurular: [...] }` biçiminde 
 
 ## Yapay zekanın kullanımı
 
-Geliştirme boyunca yapay zeka asistanı olarak **Claude** (Anthropic), **Claude Code** masaüstü uygulaması üzerinden kullanıldı. Yapay zekanın kullanıldığı aşamalar:
+Geliştirmede yapay zeka asistanı olarak **Claude** (Claude Code) kullanıldı. Şu konularda yardım alındı:
 
-| Aşama | Yapay zekanın katkısı | Örnek istem |
-|---|---|---|
-| **Fikir üretme** | Eğitim yönergesi okutularak koşullara uyan proje fikirleri istendi. Önerilen beş fikir arasından bu proje seçildi. | "Bu yönergeye proje fikri öner" |
-| **Planlama** | MVP kapsamı (olmazsa olmazlar ve sonraki sürüme kalanlar), veri modeli, bileşen ağacı, klasör yapısı ve adım adım uygulama planı çıkarıldı. | "Staj Başvuru Takip Panosu'nun MVP planını çıkar" |
-| **Kurulum** | Vite + React iskeleti ve Tailwind CSS 4 kurulumu yapıldı. Tailwind 4'te `tailwind.config.js` adımının kalktığı yapay zeka tarafından not edildi. | "Projeyi kur" |
-| **Bileşen üretimi** | Pano, kart, form, filtre ve istatistik bileşenleri yazıldı. | "Kanban sütunlarını ve başvuru kartını oluştur" |
-| **Hata ayıklama ve inceleme** | Tarihlerin UTC'ye çevrilip bir gün kayması, `javascript:` gibi tehlikeli bağlantılar ve bozuk LocalStorage verisi gibi riskler belirlenip kodda önlendi. | "Bu kodda tarih ve güvenlik açısından sorun var mı?" |
-| **Test** | Uygulama tarayıcıda açılarak form doğrulaması, ekleme, kalıcılık, durum değiştirme, Türkçe arama, filtreler, silme ve istatistik hesapları tek tek denendi. | "Uygulamayı çalıştırıp tüm akışları test et" |
-| **Stil önerisi** | Dar sütunlarda yazıların kesilmesi fark edildi; kart üzerindeki "Düzenle / Sil" yazıları simge düğmelere çevrildi. | — |
-| **Dokümantasyon** | Ekran görüntüleri alındı ve bu README'nin taslağı hazırlandı. | "README'yi teslim yönergesine göre hazırla" |
+- **Planlama:** proje fikri seçenekleri ve MVP kapsamının (ekranlar, veri modeli) taslağı
+- **Kod:** bileşenlerin ilk sürümleri ve Tailwind CSS 4 kurulumu
+- **Hata ayıklama:** tarih hesaplarında gün kayması ve güvensiz bağlantılar gibi sorunların bulunması
+- **Dokümantasyon:** bu README'nin taslağı
 
-**Yapay zekanın çıktısını nasıl doğruladım:** Üretilen kod çalıştırılarak denendi. İstatistik ekranındaki sayılar örnek veriler üzerinde elle sayımla karşılaştırıldı (örneğin 8 gönderilen başvurudan 3'ü mülakat veya teklif aşamasında, oran %38). Derleme (`npm run build`) ve lint (`npm run lint`) hatasız tamamlandı.
+Üretilen kod tarayıcıda çalıştırılıp denendi. İstatistik ekranındaki sayılar örnek verilerle elle sayılarak kontrol edildi.
 
 ## Sonraki sürüm için fikirler
 
