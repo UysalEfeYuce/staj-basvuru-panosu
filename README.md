@@ -4,7 +4,7 @@ Staj ve iş başvurularını tek bir yerden takip etmek için hazırlanmış bir
 
 Uygulamanın sunucusu yoktur; tüm veriler tarayıcının **LocalStorage** alanında saklanır.
 
-**Canlı demo:** _(Vercel linki buraya eklenecek)_
+**Canlı demo:** https://uysalefeyuce.github.io/staj-basvuru-panosu/
 
 ![Pano ekranı](docs/pano.png)
 
@@ -35,7 +35,7 @@ Uygulamanın sunucusu yoktur; tüm veriler tarayıcının **LocalStorage** alan�
 | [Tailwind CSS 4](https://tailwindcss.com) | Stil (`@tailwindcss/vite` eklentisiyle) |
 | LocalStorage | Verilerin tarayıcıda saklanması |
 | [Oxlint](https://oxc.rs) | Kod denetimi (lint) |
-| [Vercel](https://vercel.com) | Yayınlama |
+| [GitHub Pages](https://pages.github.com) + GitHub Actions | Yayınlama (`main` dalına her gönderimde otomatik) |
 
 Ek bir arayüz, grafik veya sürükle-bırak kütüphanesi kullanılmadı. Grafikler saf CSS ile çizildi.
 
