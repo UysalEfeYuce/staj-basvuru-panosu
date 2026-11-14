@@ -8,7 +8,7 @@ export default function Header({ sekme, setSekme, onYeni }) {
     <header className="sticky top-0 z-20 bg-white/90 backdrop-blur border-b border-slate-200">
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 h-16 flex items-center gap-3 sm:gap-6">
         <div className="flex items-center gap-2.5 shrink-0">
-          <img src="/favicon.svg" alt="" className="size-8" />
+          <img src={`${import.meta.env.BASE_URL}favicon.svg`} alt="" className="size-8" />
           <span className="font-semibold text-slate-900 hidden sm:inline">Staj Başvuru Panosu</span>
         </div>
 
